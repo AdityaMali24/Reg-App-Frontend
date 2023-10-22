@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  /* box-sizing: border-box; */
+  font-family: 'Poppins', sans-serif;
+  /* margin: 0;
+  padding: 0; */
+}
+.Navtop{
+  display: flex !important;
+  justify-content: center !important;
+  padding-left: 50px !important;
+}
+.nav-link {
+  font-size: 18px;
+  color: #e1e1e1;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: #fff;
+}
+
+.nav-link:focus:after,
+.nav-link:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.col-form-label{
+  color: #dee2e6 !important;
+}
+.formback{
+  background-color: #6B6ECC;
+  background: linear-gradient(45deg, #04051dea 0%, #2b566e 100%);
+}
+.nav-link:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+.tab1{
+  background-color: #6B6ECC !important;
+  background: linear-gradient(45deg, #04051dea 0%, #2b566e 100%) !important;
+}
+.textarea{
+  display: flex;
+  align-items: center;
+}
+.textarea2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.textarea3{
+  display: flex;
+  align-items: center;
+}
+.textarea4{
+  display: flex;
+  align-items: center;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.anchor{
+  text-decoration: none;
+  color: black;
+}
+.table{
+  --bs-table-color: rgb(176, 237, 233) !important ;
+    --bs-table-bg:#11233d !important ;
+}
+
+/* Styling for the tr in tbody */
+.tab1 tbody tr {
+  background-color: #f2f2f2 !important; /* This gives a light grey background color */
+}
+
+button {
+  --color: #0077ff;
+  font-family: inherit;
+  display: inline-block;
+  width: 6em;
+  height: 2.6em;
+  line-height: 2.5em;
+  overflow: hidden;
+  margin: 20px;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+}
+
+button::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 150px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.errorcolor {
+  color: red;
+}
+
+
+button:hover {
+  color: white;
+}
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: .3s all;
+}
+
+button:hover::before {
+  top: -30px;
+  left: -30px;
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.table th{
+  border-top: 1px solid #dee2e6 ;
+}
+.table td, .table th {
+  border-right: 1px solid #dee2e6;  /* This will add right borders to table cells */
+}
+
+.table th:last-child, .table td:last-child {
+  border-right: 0;  /* This will remove the right border of the last cell in each row */
+}
+
+.table-responsive {
+  overflow-x: auto; /* This will allow horizontal scrolling */
+}
+
+
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+  table {
+      font-size: 16px; /* Adjust font size as needed */
+  }
+
+  table td, table th {
+    padding: 8px; /* Adjust as needed */
+}
+.table .btn:hover{
+  background-color: #0077ff !important;
+}
+button:hover { 
+  /* Place your hover animation for button here */
+  /* Example: */
+  transform: scale(1.05); /* This will slightly enlarge the button on hover */
+}
+
+}
+
